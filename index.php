@@ -22,6 +22,7 @@
     <?php include('./includes/features/features.php')?>
     <?php include('./includes/processos/processos.php')?>
     <?php include('./includes/fotosGrid/fotosGrid.php')?>
+    <?php include('./includes/faq/faq.php')?>
     <?php include('./includes/localizacao/localizacao.php')?>
     <?php include('./includes/footer/footer.php')?>
     <?php include('./includes/whatsapp/whatsapp.php')?>
