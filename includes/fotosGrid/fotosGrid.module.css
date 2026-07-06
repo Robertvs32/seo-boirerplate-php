@@ -1,0 +1,78 @@
+/* ==========================================================================
+   SEÇÃO GALERIA DE FOTOS
+   ========================================================================== */
+
+.galeria-section {
+    padding: 80px 0;
+    background-color: #ffffff; /* Ajuste para o fundo do seu site se necessário */
+}
+
+/* Container alinhado com o padrão do seu tema */
+.galeria-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Cabeçalho da Galeria */
+.galeria-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.galeria-tag {
+    display: inline-block;
+    color: #dd977a; /* Tom dourado elegante (Gold Star) */
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+}
+
+.galeria-title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #222222;
+    margin: 0 0 15px 0;
+}
+
+.galeria-desc {
+    color: #666666;
+    font-size: 16px;
+    max-width: 600px; /* Corrigido: 600px para o texto fluir bem */
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Grid Inteligente e Responsivo */
+.galeria-grid {
+    display: grid;
+    /* Cria colunas automaticamente de no mínimo 280px até ocupar o espaço restante (1fr) */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px; /* Espaçamento idêntico entre as fotos (horizontal e vertical) */
+}
+
+/* Item do Grid (Card da Foto) */
+.galeria-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px; /* Cantos arredondados sutis */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Sombra bem leve */
+    background-color: #f5f5f5;
+    
+    /* Mantém todas as fotos na proporção 4:3 (padrão de câmera) 
+       Mesmo que as imagens originais tenham tamanhos diferentes, elas vão alinhar perfeitamente */
+    aspect-ratio: 4 / 3; 
+}
+
+/* Configuração da Imagem */
+.galeria-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Recorta a imagem proporcionalmente sem distorcer */
+    display: block;
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1); /* Transição suave */
+}

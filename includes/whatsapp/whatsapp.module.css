@@ -1,0 +1,100 @@
+/* whatsapp-flutuante.css */
+
+.btn-whatsapp-flutuante {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px; /* Distância do fundo */
+    right: 40px;  /* Distância da direita */
+    background-color: #25d36500; /* Verde oficial do WhatsApp */
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    z-index: 1000; /* Garante que fique por cima de tudo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    
+    /* Animação de pulso sutil */
+    animation: pulse-whatsapp 2s infinite;
+}
+
+.btn-instagram-flutuante {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 92px; /* Distância do fundo */
+    right: 40px;  /* Distância da direita */
+    background-color: #25d36500; /* Verde oficial do WhatsApp */
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    z-index: 1000; /* Garante que fique por cima de tudo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    
+    /* Animação de pulso sutil */
+    animation: pulse-insta 2s infinite;
+}
+
+.btn-whatsapp-flutuante:hover {
+    transform: scale(1.1); /* Aumenta levemente no hover */
+    background-color: #4770557a; /* Verde um pouco mais escuro */
+    /* box-shadow: 0 6px 15px rgba(179, 26, 26, 0.3); */
+}
+
+.btn-instagram-flutuante:hover {
+    transform: scale(1.1); /* Aumenta levemente no hover */
+    background-color: #612b707a; /* Verde um pouco mais escuro */
+    /* box-shadow: 0 6px 15px rgba(179, 26, 26, 0.3); */
+}
+
+
+
+/* Definição da animação de pulso */
+@keyframes pulse-whatsapp {
+    0% {
+        box-shadow: 0 0 0 0 rgb(1, 250, 92);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+@keyframes pulse-insta {
+    0% {
+        box-shadow: 0 0 0 0 rgb(204, 0, 255);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+/* Ajuste para telas menores (mobile) */
+@media (max-width: 768px) {
+    .btn-whatsapp-flutuante {
+        width: 40px;
+        height: 50px;
+        bottom: 30px;
+        right: 30px;
+    }
+    .btn-instagram-flutuante {
+        width: 40px;
+        height: 50px;
+        bottom: 80px;
+        right: 30px;
+    }
+}

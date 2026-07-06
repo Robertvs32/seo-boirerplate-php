@@ -1,0 +1,99 @@
+.feature-section {
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+/* Fundo cinza claro alternado para separar as seções visualmente */
+.feature-section:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+.feature-grid {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+/* Classe de inversão aplicada pelo PHP */
+.feature-section.row-reverse .feature-grid {
+    flex-direction: row-reverse;
+}
+
+.feature-content {
+    flex: 1;
+}
+
+.feature-img-box {
+    flex: 1;
+}
+
+.feature-img {
+    width: 100%;
+    max-height: 500px;
+    transform: scale(0.9);
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 25px 25px 50px rgba(0,0,0,0.05);
+}
+
+.feature-badge {
+    color: #dd977a;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1.5px;
+}
+
+.feature-title {
+    font-size: 2.8rem;
+    color: #1e293b;
+    margin: 15px 0 25px;
+    line-height: 1.1;
+}
+
+.feature-text {
+    color: #64748b;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+.feature-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border: 2px solid #1e293b;
+    color: #1e293b;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.feature-btn:hover {
+    background: #1e293b;
+    color: #fff;
+}
+
+/* Responsividade Mobile */
+@media (max-width: 992px) {
+    .feature-grid {
+        flex-direction: column !important; /* Força empilhar no mobile */
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .feature-img-box {
+        width: 100%;
+    }
+
+    .feature-img {
+        max-width: 600px;
+    }
+
+    .feature-title {
+        font-size: 2rem;
+    }
+}
