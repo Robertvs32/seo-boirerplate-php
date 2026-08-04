@@ -26,7 +26,6 @@
     <?php include('./includes/localizacao/localizacao.php')?>
     <?php include('./includes/footer/footer.php')?>
     <?php include('./includes/whatsapp/whatsapp.php')?>
-    
 
 </body>
 </html>
