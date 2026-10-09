@@ -1,0 +1,20 @@
+
+.simpleTitleSection{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.simpleTitleSection-title{
+    font-size: 0.75rem;
+    color: rgb(125, 125, 125);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.simpleTitleSection-desc{
+    color: rgb(253, 253, 254);
+    font-size: 1.5rem;
+    text-align: center;
+}

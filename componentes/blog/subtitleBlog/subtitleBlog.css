@@ -1,0 +1,13 @@
+.subtitleBlog{
+    width: 100%;
+    max-width: 1200px;
+    font-size: 2rem;
+    margin-bottom: 22px;
+    color: var(--subtitleBlog-color);
+}
+
+@media(max-width: 768px){
+    .subtitleBlog{
+        font-size: 1.6rem;
+    }
+}

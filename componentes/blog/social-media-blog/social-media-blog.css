@@ -1,0 +1,25 @@
+.social-media-blog{
+    display: flex;
+    flex-direction: row;
+    margin: 8px 0;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+.social-media-blog img{
+    width: 28px;
+    transition: transform 0.3s ease;
+    margin-right: 8px;
+}
+
+.social-media-blog img:hover{
+    transform: scale(1.1);
+}
+
+.social-media-blog a{
+    text-decoration: none;
+}
+
+@media(max-width: 768px){
+
+}

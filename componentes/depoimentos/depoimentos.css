@@ -1,0 +1,73 @@
+
+.containerDepoimentos{
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    height: 420px;
+}
+
+.testimonial-section {
+    padding: 60px 0;
+    height: 100%;
+}
+
+/* Ajuste do Swiper para as setas aparecerem */
+.mySwiper {
+    position: relative !important;
+    padding: 10px 0;
+    height: 100%;
+}
+
+.swiper-slide{
+    height: auto;
+    display: flex;
+}
+
+.testimonial-card {
+    background: #fff;
+    padding: 30px;
+    border: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.stars { color: #d4af37; font-size: 0.8rem; margin-bottom: 15px; }
+
+.testimonial-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 20px;
+    font-style: italic;
+    word-break: break-word;
+}
+
+.user-meta { display: flex; align-items: center; gap: 12px; }
+
+.user-meta img { width: 45px; height: 45px; border-radius: 50%; object-fit: cover; }
+
+.user-meta h4 { margin: 0; font-size: 0.95rem; color: #111; }
+
+.user-meta span { font-size: 0.8rem; color: #888; }
+
+.swiper-button-next, .swiper-button-prev {
+    color: #000 !important;
+    width: 25px !important;
+    position: absolute;
+}
+
+.swiper-button-next { right: 5px !important; }
+.swiper-button-prev { left: 5px !important; }
+
+.swiper-button-next:after, .swiper-button-prev:after { font-size: 18px !important; font-weight: bold; }
+
+@media(max-width: 500px){
+    .containerDepoimentos{
+        height: 500px;
+    }
+}

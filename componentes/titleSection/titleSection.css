@@ -1,0 +1,28 @@
+
+.titleSection{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.titleSection-title{
+    font-size: 2.2rem;
+    background: var(--gradient-color2);
+    color: transparent;
+    background-clip: text;
+    letter-spacing: 2px;
+}
+
+.titleSection-desc{
+    color: rgb(253, 253, 254);
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 8px;
+}
+
+@media(max-width: 768px){
+    .titleSection-desc{
+        font-size: 1.1rem;
+    }
+}

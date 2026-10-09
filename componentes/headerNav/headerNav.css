@@ -1,0 +1,152 @@
+/* HEADER SCROLL */
+.headerScroll {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px 0;
+    background: transparent;
+    background: linear-gradient(45deg, black, rgb(39, 39, 39), black);
+    transition: opacity 0.75s ease, padding 1s ease, display 0.75s ease;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    opacity: 100%;
+}
+
+.headerScroll.active {
+    /* padding: 0px; */
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.logoHeaderScroll img{
+    width: 170px;
+}
+
+.navHeaderScroll {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+    display: flex;
+}
+
+/* NAV LIST HEADER SCROLL */
+.navListHeaderScroll{
+    display: flex;
+    list-style-type: none;
+}
+
+.linkNavListHeaderScroll {
+    padding: 10px 22px;
+    display: flex;
+    text-decoration: none;
+    color: transparent;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: background 0.5s ease;
+    text-decoration: none;
+    background: var(--gradient-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    position: relative
+}
+
+.linkNavListHeaderScroll::before {
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: var(--gradient-color);
+    height: 1px;
+    position: absolute;
+    width: 0;
+    max-width: 0;
+    transition: all 0.4s ease;
+}
+
+.linkNavListHeaderScroll:hover::before {
+    max-width: 100%;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+/* MENU HAMBURGUER */
+.hamburguerHeaderScroll {
+    display: none;
+    cursor: pointer;
+    z-index: 1001;
+    background: none;
+    border: none;
+}
+
+.barHeaderScroll {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: var(--gradient-color);
+}
+
+
+/* Responsividade Mobile */
+@media (max-width: 768px) {
+    .hamburguerHeaderScroll { display: block; }
+    
+    .headerScroll {
+        justify-content: space-between;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .navHeaderScroll {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        right: 0;
+        z-index: 1000;
+        bottom: 0;
+        flex-direction: column;
+        background-color: var(--primary-color);
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        transition: 0.6s;
+        padding-top: 100px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        overflow: hidden;
+    }
+
+    .navListHeaderScroll{
+        flex-direction: column;
+    }
+
+    .linkNavListHeaderScroll{
+        text-align: center;
+        /* background-color: red; */
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navHeaderScroll.show{ 
+        left: 0; 
+    }
+
+    .navHeaderScroll li { margin: 15px 0; }
+
+    .hamburguerHeaderScroll.active .barHeaderScroll:nth-child(2) { opacity: 0;}
+    .hamburguerHeaderScroll.active .barHeaderScroll:nth-child(1) { 
+        transform: translateY(8px) rotate(45deg); 
+        background-color: black;
+    }
+    .hamburguerHeaderScroll.active .barHeaderScroll:nth-child(3) { 
+        transform: translateY(-8px) rotate(-45deg); 
+        background-color: black;
+    }
+}

@@ -1,0 +1,13 @@
+.infosBlog{
+    display: flex;
+    gap: 0 26px;
+    color: rgba(0, 0, 0, 0.727);
+    margin-bottom: 24px;
+}
+
+@media(max-width: 768px){
+    .infosBlog{
+        flex-direction: column;
+        gap: 6px 0
+    }
+}

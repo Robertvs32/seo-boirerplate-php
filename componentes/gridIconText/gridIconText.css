@@ -1,0 +1,64 @@
+
+
+.gridIconText {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    grid-template-rows: 1fr;
+    gap: 18px;
+    margin-top: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gridIconText-item {
+    background: #fff;
+    padding: 40px 30px;
+    border: 1px solid #eee;
+    position: relative;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.gridIconText-item:hover {
+    transform: translateY(-5px);
+    border-color: var(--terciary-color);
+}
+
+.gridIconText-number {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    font-size: 4.5rem;
+    font-weight: 900;
+    color: black;
+    z-index: 1;
+}
+
+.gridIconText-content {
+    position: relative;
+    z-index: 2;
+}
+
+.gridIconText-icon {
+    margin-bottom: 20px;
+    display: block;
+    width: 45px;
+    height: 45px;
+}
+
+.gridIconText-item h3 {
+    font-size: 1.1rem;
+    color: #111;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.gridIconText-item p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .gridIconText-item { padding: 30px; }
+}

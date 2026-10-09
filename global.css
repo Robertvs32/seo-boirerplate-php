@@ -1,0 +1,25 @@
+:root{
+    --primary-color: rgb(22, 19, 17);
+    --secundary-color: #44360f;
+    --terciary-color: #4689ad;
+    --gradient-color: linear-gradient(to right, #e4f9ff, #e3ffff, #e3f7ff);
+    --gradient-color2: linear-gradient(to right, #00c8ff, #10f5f9, #63d3ff);
+    --subtitleBlog-color: rgb(35, 55, 79);
+    --subSubtitleBlog-color: rgb(35, 55, 79);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif;
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    background-color: #080808;
+}

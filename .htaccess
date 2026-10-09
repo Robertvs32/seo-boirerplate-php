@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # SE A REQUISICAO ORIGINAL TIVER .php, tira e redireciona para /path sem php
+    RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^\.]+)\.php\ HTTP [NC]
+    RewriteRule ^(.*)\.php$ /$1 [R=301,L]
+
+    # SE A REQUISICAO NAO TIVER php, manda pra .php
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    RewriteRule ^([^\.]+)$ $1.php [L]
+</IfModule>

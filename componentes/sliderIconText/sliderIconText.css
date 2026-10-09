@@ -1,0 +1,79 @@
+.sliderIconText-container{
+    margin: 0 auto;
+    width: 100%;
+    padding: 4px;
+    height: 255px;
+}
+
+.mySwiperSliderIconText {
+    width: 100%;
+    padding: 4px;
+    height: 100%;
+}
+
+.mySwiperSliderIconText .swiper-wrapper {
+    height: 100%;
+}
+
+
+.sliderIconText-card-slider {
+    background: linear-gradient(45deg, rgb(224, 217, 217), rgb(255, 255, 255));
+    padding: 40px 30px;
+    text-align: center;
+    border: 1px solid #eee;
+    transition: 0.3s;
+    height: 100%;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    flex-direction: column;
+    padding: 40px 24px 24px 24px;
+    /* justify-content: center; */
+}
+
+.swiper-pagination-bullet{
+    background: rgb(255, 255, 255) !important;
+}
+
+.sliderIconText-card-slider h3{
+    font-size: 1.2rem;
+    letter-spacing: 0.9px;
+}
+
+.sliderIconText-card-slider p{
+    font-size: 0.85rem;
+    margin-top: 8px;
+    color: rgba(0, 0, 0, 0.692);
+    letter-spacing: 1.02px;
+    font-weight: 200px;
+}
+
+.sliderIconText-card-slider:hover {
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    border-color: var(--terciary-color);;
+}
+
+.sliderIconText-card-slider .icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 16px;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #000000 !important;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after{
+    font-size: 20px !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--terciary-color) !important;
+}
+
+@media(max-width: 500px){
+    .sliderIconText-container{
+        height: 280px;
+    }
+}

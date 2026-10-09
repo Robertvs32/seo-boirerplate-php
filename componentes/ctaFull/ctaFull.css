@@ -1,0 +1,38 @@
+.ctaFull{
+    background: linear-gradient(45deg, black, rgb(39, 39, 39), rgb(67, 72, 83));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center; 
+    padding: 60px;
+}
+
+.ctaFull span{
+    font-size: 4rem;
+    font-weight: 100;
+    color: white;
+    max-width: 1200px;
+}
+
+.ctaFull button{
+    background:transparent;
+    border: white 1px solid;
+    padding: 16px 20px;
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    margin-top: 60px;
+    cursor: pointer;
+}
+
+@media(max-width: 800px){
+    .ctaFull span{
+        font-size: 3rem;
+    }
+
+    .ctaFull button{
+        font-size: 0.9rem;
+    }
+}
